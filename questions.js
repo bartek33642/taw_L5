@@ -169,3 +169,7 @@ let preQuestions =
                     "Video Card"
                 ]
             }];
+
+module.exports = {
+    questions: preQuestions,
+    };
