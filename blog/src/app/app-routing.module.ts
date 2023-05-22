@@ -5,6 +5,10 @@ import {BlogItemDetailsComponent} from "./components/blog-item-details/blog-item
 
 const routes: Routes = [
   {
+    path: '',
+    component: BlogComponent
+  },
+  {
     path: 'blog/detail/:id',
     component: BlogItemDetailsComponent
     },
