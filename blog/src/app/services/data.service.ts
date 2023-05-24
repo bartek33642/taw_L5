@@ -19,4 +19,7 @@ export class DataService {
     return this.http.get(this.url + '/api/post/' + id);
   }
   
+  addPost(data: any){
+    return this.http.post(this.url + '/api/post', data);
+  }
 }

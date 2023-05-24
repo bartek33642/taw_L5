@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AuthGuard } from './services/auth.guard';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { AddPostComponent } from './components/addpost/addpost.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,6 @@ const routes: Routes = [
       path: 'signup',
       component: SignupComponent
      },
-      
     
   {
     path: '',
@@ -33,6 +33,12 @@ const routes: Routes = [
     path: 'blog/detail/:id',
     component: BlogItemDetailsComponent
     },
+
+  {
+    path: 'addpost',
+    component: AddPostComponent,
+    canActivate: [AuthGuard]
+  }
     
 ];
 

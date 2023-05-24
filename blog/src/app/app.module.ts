@@ -22,6 +22,7 @@ import {AuthInterceptor} from './services/auth/auth.interceptor';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { AddPostComponent } from './components/addpost/addpost.component';
 
 
 
@@ -42,7 +43,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     HomeComponent,
     LoginComponent,
     SignupComponent,
-    NavbarComponent
+    NavbarComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
