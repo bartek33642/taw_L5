@@ -22,4 +22,5 @@ export class DataService {
   addPost(data: any){
     return this.http.post(this.url + '/api/post', data);
   }
+  
 }

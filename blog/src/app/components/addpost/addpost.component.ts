@@ -24,6 +24,6 @@ export class AddPostComponent {
     this.dataService.addPost(this.post).subscribe((result) => {
       return result;
     });
-    this.router.navigate(['/']);
+    this.router.navigate(['/blog']);
   }
 }
